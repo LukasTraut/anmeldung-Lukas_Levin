@@ -35,12 +35,12 @@ namespace anmeldung_Lukas_Levin
             string n = Console.ReadLine();
             else if (n == "n" || n == "N")
             {
-
+               string addCsv=newUser();
 
 
             }
         }
-        static string newUser (string content) {
+        static string newUser () {
             string n = Console.ReadLine();
             
             Console.WriteLine("Neue Anmeldung:");
