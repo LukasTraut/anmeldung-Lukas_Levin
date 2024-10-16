@@ -25,7 +25,7 @@ namespace anmeldung_Lukas_Levin
             if (menu == "a" || menu == "A") {
                 for (int i = 0; i < lines.Length; i++)
                 {
-                    
+                    string[] zeile = lines[i].Split(';');
                 }
             }
             else if (menu == "n" || menu == "N")
