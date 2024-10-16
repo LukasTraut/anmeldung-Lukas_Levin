@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml.Linq;
 
 namespace anmeldung_Lukas_Levin
 {
@@ -29,8 +30,10 @@ namespace anmeldung_Lukas_Levin
                 }
             }
             else if (menu == "n" || menu == "N")
-                {
-
+            {
+                string addCsv = newUser();
+                File.AppendAllText(dataPath, "\n" + addCsv);
+                
 
             }
         }
@@ -43,16 +46,17 @@ namespace anmeldung_Lukas_Levin
             Console.Write("Nachname: ");
             string sirname = Console.ReadLine();
             Console.Write("Geschlecht (M/W): ");
-            string geschlecht = Console.ReadLine();
+            string gender = Console.ReadLine();
             Console.Write("Telefon: ");
             string phonenumber = Console.ReadLine();
             Console.Write("Geburtsdatum: ");
             string birthday = Console.ReadLine();
             Console.Write("Vorlesung: ");
             string vorlesung=Console.ReadLine();
-            string addCsv = name + ";" + sirname +";"+geschlecht+ ";" + phonenumber + ";" + vorlesung + ";" + birthday;
+            string addCsv = name + ";" + sirname +";"+gender+ ";" + phonenumber + ";" + vorlesung + ";" + birthday;
             return addCsv;
             
+
         }
     }
 }
