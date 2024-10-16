@@ -10,6 +10,7 @@ namespace anmeldung_Lukas_Levin
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Test");
         }
     }
 }
