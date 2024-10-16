@@ -43,16 +43,21 @@ namespace anmeldung_Lukas_Levin
         static string newUser (string content) {
             string n = Console.ReadLine();
             
-                Console.WriteLine("Neue Anmeldung:");
-                Console.Write("Vorname: ");
-                string name = Console.ReadLine();
-                Console.Write("Nachname: ");
-                string sirname = Console.ReadLine();
-                Console.Write("Telefon: ");
-                string phonenumber = Console.ReadLine();
-                Console.Write("Geburtsdatum: ");
+            Console.WriteLine("Neue Anmeldung:");
+            Console.Write("Vorname: ");
+            string name = Console.ReadLine();
+            Console.Write("Nachname: ");
+            string sirname = Console.ReadLine();
+            Console.Write("Geschlecht (M/W): ");
+            string geschlecht = Console.ReadLine();
+            Console.Write("Telefon: ");
+            string phonenumber = Console.ReadLine();
+            Console.Write("Geburtsdatum: ");
             string birthday = Console.ReadLine();
             Console.Write("Vorlesung: ");
+            string vorlesung=Console.ReadLine();
+            string addCsv = name + ";" + sirname +";"+geschlecht+ ";" + phonenumber + ";" + vorlesung + ";" + birthday;
+            return addCsv;
             
         }
     }
