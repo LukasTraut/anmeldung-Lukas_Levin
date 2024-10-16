@@ -10,6 +10,10 @@ namespace anmeldung_Lukas_Levin
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("*** Anmeldung verwalten ***");
+            Console.WriteLine("Menu: a = Anmeldungen anzeigen, n = Neue Anmeldung, g = Gebrauchte Vorlesungen");
+            string a = Console.ReadLine();
+            if (a == "a" || a == "A") ;
         }
     }
 }
