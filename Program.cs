@@ -26,6 +26,11 @@ namespace anmeldung_Lukas_Levin
                 for (int i = 0; i < lines.Length; i++)
                 {
                     string[] zeile = lines[i].Split(';');
+                    Console.WriteLine(zeile[0]);
+                    Console.WriteLine(zeile[1]);
+                    Console.WriteLine(zeile[2]);
+                    Console.WriteLine(zeile[3]);
+                    Console.WriteLine(zeile[4]);
                 }
             }
             else if (menu == "n" || menu == "N")
