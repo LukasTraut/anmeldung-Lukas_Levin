@@ -32,11 +32,9 @@ namespace anmeldung_Lukas_Levin
                 {
 
 
-
-                }
-            
+            }
         }
-        static string newUser (string content) {
+        static string newUser () {
             string n = Console.ReadLine();
             
             Console.WriteLine("Neue Anmeldung:");
